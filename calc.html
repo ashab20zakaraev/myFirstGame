@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style1.css">
+</head>
+<body>
+
+<div class="calc">
+    <div class="container">
+       
+        <div class="calc__inner">
+           
+            <form action="/" class="calc__form">
+               
+                    <input type="text" id="user__num" class="user__word" onkeypress='validate(event)' placeholder="0"> 
+
+                <div class="operators">
+                  
+                   <div class="radio radio--plus">
+                       <input type="radio" id="plus" name="operator" class="radio__input" onclick="boxClick()">
+                       
+                       <label for="plus" class="radio__label">+</label>
+                   </div>
+                   
+                   <div class="radio radio--minus">
+                       <input type="radio" id="minus" name="operator" class="radio__input" onclick="boxClick()">
+                       
+                       <label for="minus" class="radio__label">-</label>
+                   </div>
+                   
+                   <div class="radio radio--mult">
+                       <input type="radio" id="mult" name="operator" class="radio__input" onclick="boxClick()">
+                       
+                       <label for="mult" class="radio__label radio__label--mult">*</label>
+                   </div>
+                   
+                   <div class="radio radio--div">
+                       <input type="radio" id="div" name="operator" class="radio__input" onclick="boxClick()">
+                       
+                       <label for="div" class="radio__label">/</label>
+                   </div>
+                   
+                </div>
+
+                <div class="btn__helper">
+                    <button id="clear" type="button">C</button>
+                    <button id="btn" type="button">=</button>
+                </div>
+                
+                <p id="one"></p>
+                <p id="out"></p>
+            </form>
+            
+        </div> <!-- /.calc__inner -->
+        
+    </div> <!-- /.container -->
+</div> <!-- /.calc -->
+
+<script src="assets/js/app1.js"></script>
+</body>
+</html>

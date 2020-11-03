@@ -1,0 +1,40 @@
+html {
+    font-family: sans-serif;
+  }
+
+body {
+  width: 50%;
+  max-width: 800px;
+  min-width: 320px;
+  margin: 0 auto;
+}
+
+.lastResult {
+  color: white;
+  padding: 3px;
+}
+
+.gameTitle {
+  text-align: center;
+}
+
+.calc {
+    text-decoration: none;
+    color: #5e8038;
+    
+    display: none;
+    
+    text-align: right;
+}
+
+.calc:hover {
+    text-decoration: underline;
+}
+
+.calc:active{
+    color: #000;
+}
+
+.calc.active {
+    display: block;
+}
