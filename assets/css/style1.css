@@ -163,6 +163,7 @@ button:focus {
 }
 
 .radio__input {
+    -webkit-appearance: none;
     appearance: none;
     position: absolute;
 }
